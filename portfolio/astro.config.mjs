@@ -7,7 +7,7 @@ export default defineConfig(
   {
     integrations: [tailwind()],
     site: 'https://midorigameee.github.io',
-    base: '/portfolio_astro',
+    base: '/my_repo',
     // root: './portfolio',
     // publicDir: './portfolio/public',
     // srcDir: './portfolio/src',
