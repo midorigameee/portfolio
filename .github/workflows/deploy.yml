@@ -21,9 +21,10 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: DEBUG confirmation my directory informatinon
-        run: |
-          pwd
-          ls
+        run: pwd
+        run: ls
+        run: mv -r portfolio/* .
+
       - name: Install, build, and upload your site
         uses: withastro/action@v1
         with:
