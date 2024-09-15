@@ -11,11 +11,11 @@
       "source": ".",
       "target": "/workspace"
     },
-  //   {
-  //     "type": "volume",
-  //     "source": "node_modules_note-memo",
-  //     "target": "/workspace/note-app-with-react/node_modules"
-  //   }
+    {
+      "type": "volume",
+      "source": "node_modules_portfolio",
+      "target": "/workspace/portfolio/node_modules"
+    }
   ],
   "customizations": {
     "vscode": {
@@ -29,6 +29,7 @@
         "dsznajder.es7-react-js-snippets",
         "formulahendry.auto-rename-tag",
         "formulahendry.auto-close-tag",
+        "astro-build.astro-vscode",
         // General
         "yzhang.markdown-all-in-one"
       ],

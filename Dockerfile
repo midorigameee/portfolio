@@ -41,6 +41,6 @@ RUN git config --global core.quotepath false
 RUN git config --global push.default current
 
 ### node_modulesを予め用意しておく設定
-# WORKDIR /workspace/note-app-with-react
-# COPY ./note-app-with-react/package*.json /workspace/note-app-with-react
-# RUN npm install
+WORKDIR /workspace/portfolio
+COPY ./portfolio/package*.json /workspace/portfolio
+RUN npm install
