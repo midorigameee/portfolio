@@ -7,7 +7,7 @@ export default defineConfig(
   {
     integrations: [tailwind()],
     site: 'https://midorigameee.github.io',
-    // base: '/my-repo',
+    base: '/portfolio',
   }, // your configuration options here...
   // https://docs.astro.build/en/reference/configuration-reference/
 );
