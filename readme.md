@@ -31,3 +31,9 @@
 `npm create astro@latest -- --template Marve10s/Elkamali-Portfolio-Template`
 
 （参考）<https://qiita.com/Rui010/items/124b5a7e27c6b93a6595>
+
+### GitHub Pages へのデプロイ
+
+以下のページを参考にして、main ブランチが更新されるたびにデプロイする GitHub Actions を作成した。
+
+<https://docs.astro.build/ja/guides/deploy/github/>
