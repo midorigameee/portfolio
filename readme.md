@@ -17,3 +17,17 @@
 
 デプロイ先：Github Pages
 フレームワーク：Astro
+
+## Astro について
+
+### テーマ
+
+下記のテンプレートを使用する。
+
+<https://astro.build/themes/details/elkamali-portfolio-blog/>
+
+下記のリンクを参考にして、以下のコマンドでテーマが適用された Astro プロジェクトを作成する。
+
+`npm create astro@latest -- --template Marve10s/Elkamali-Portfolio-Template`
+
+（参考）<https://qiita.com/Rui010/items/124b5a7e27c6b93a6595>
