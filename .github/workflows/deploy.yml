@@ -25,7 +25,7 @@ jobs:
           pwd
           ls
           echo "----- before mv -----"
-          mv -r portfolio/* .
+          mv portfolio/* .
           echo "----- after mv -----"
           ls
 
