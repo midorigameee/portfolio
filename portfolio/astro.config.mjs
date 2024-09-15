@@ -7,12 +7,12 @@ export default defineConfig(
   {
     integrations: [tailwind()],
     site: 'https://midorigameee.github.io',
-    base: '/my_repo',
-    // root: './portfolio',
-    // publicDir: './portfolio/public',
-    // srcDir: './portfolio/src',
-    // outDir: './portfolio/dist',
-    // cacheDir: './portfolio/node_modules/.astro',
+    base: '/portfolio/dist/',
+    trailingSlash: 'never',
+    build: {
+      // 例: ビルド時に`page/index.html`ではなく`page.html`を生成します。
+      format: 'file',
+    },
   }, // your configuration options here...
   // https://docs.astro.build/en/reference/configuration-reference/
 );
