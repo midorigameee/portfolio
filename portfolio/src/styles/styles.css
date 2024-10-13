@@ -35,14 +35,14 @@
   .text-rose-custom {
     color: var(--clr-rose);
   }
-}
 
-.container > h2 {
-  margin-top: 10px;
-  font-size: large;
-}
+  .container > h2 {
+    margin-top: 10px;
+    font-size: large;
+  }
 
-.container > h3 {
-  margin-top: 10px;
-  font-size: medium;
+  .container > h3 {
+    margin-top: 10px;
+    font-size: medium;
+  }
 }
