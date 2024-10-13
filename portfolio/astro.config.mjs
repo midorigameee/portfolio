@@ -8,7 +8,7 @@ export default defineConfig(
     integrations: [tailwind()],
     site: 'https://midorigameee.github.io',
     base: '/portfolio_astro/',
-    // trailingSlash: 'never',
+    trailingSlash: 'never',
     // build: {
     //   // 例: ビルド時に`page/index.html`ではなく`page.html`を生成します。
     //   format: 'file',
