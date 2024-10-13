@@ -9,14 +9,18 @@ poster: '/images/astro.jpg'
 
 ## フォルダ構成
 
-- /
-  - .devcontainer
-  - .github
-  - portfolio
-    - src
-    - astro.config.mjs
-    - package.json
-  - Dockerfile
+```text
+portfolio_astro/(リポジトリ名)/
+├── .devcontainer
+│   └── devcontainer.json
+├── .github
+├── portfolio/
+│   ├── src/
+│   │   └── // Astroのソース
+│   ├── astro.config.mjs
+│   └── package.json
+└── Dockerfile
+```
 
 ## astro.config.mjs
 
