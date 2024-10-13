@@ -10,10 +10,7 @@ const blogs = await Astro.glob<{
 }>('../pages/blogs/*.md');
 ---
 
-const isProd = import.meta.env.PROD;
-
-
-<Main title="Ibrahim Elkamali">
+<Main title="Shin's Portfolio">
   <div class="flex items-center flex-wrap pb-8 md:space-x-8 animate">
     <Image
       class="object-cover rounded-full w-[124px] h-[124px] max-md:w-24 max-md:h-24"
@@ -50,19 +47,19 @@ const isProd = import.meta.env.PROD;
           title: '自己紹介',
           gradientFrom: '#818cf8',
           gradientTo: '#d8b4fe',
-          to: './aboutMe',
+          to: '/aboutMe',
         },
         {
           title: '技術 / スキル',
           gradientFrom: '#fde68a',
           gradientTo: '#fca5a5',
-          to: './techStack',
+          to: '/techStack',
         },
         {
           title: 'プロジェクト',
           gradientFrom: '#6ee7b7',
           gradientTo: '#9333ea',
-          to: './projects',
+          to: '/projects',
         },
       ]}
     />
