@@ -70,15 +70,22 @@ const { title, subtitle, poster } = Astro.props.frontmatter;
 </Main>
 
 <style is:global>
+    .markdown-article h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
   .markdown-article h2 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: large;
+    font-weight: bold;
   }
 
   .markdown-article h3 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: medium;
+    font-weight: bold;
   }
 </style>
