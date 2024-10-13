@@ -1,4 +1,5 @@
 FROM node:22.4.1-bookworm
+EXPOSE 4321
 
 ### 各種必要なパッケージとエイリアスの設定
 RUN apt-get update \

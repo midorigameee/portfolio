@@ -25,17 +25,17 @@ const blogs = await Astro.glob<{
       <h1
         class="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 ml-4"
       >
-        Ibrahim Elkamali
+        Shintaro Nakazawa
       </h1>
       <h2
         class="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mt-2 ml-4"
       >
-        Your Astro Front-End Developer
+        Saas系IT企業で働く駆け出しエンジニア
       </h2>
       <p
         class="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-4 ml-4 text-wrap"
       >
-        I'm here to help you build your fast and scalable web applications.
+        自分の得意分野を作るために日々奮闘中です。
       </p>
     </div>
   </div>
@@ -44,33 +44,32 @@ const blogs = await Astro.glob<{
     <Cards
       cards={[
         {
-          title: 'Technology I possess',
+          title: '自己紹介',
           gradientFrom: '#818cf8',
           gradientTo: '#d8b4fe',
+          to: '/aboutMe',
+        },
+        {
+          title: '技術 / スキル',
+          gradientFrom: '#fde68a',
+          gradientTo: '#fca5a5',
           to: '/techStack',
         },
         {
-          title: 'Projects I Have Worked On',
-          gradientFrom: '#fde68a',
-          gradientTo: '#fca5a5',
-          to: '/projects',
-        },
-        {
-          title: 'Learn More About Me',
+          title: 'プロジェクト',
           gradientFrom: '#6ee7b7',
           gradientTo: '#9333ea',
-          to: '/aboutMe',
+          to: '/projects',
         },
       ]}
     />
   </div>
   <div class="mt-12 animate">
     <h3 class="text-3xl text-gray-900 dark:text-gray-100 mb-4">
-      Featured Blogs
+      学習の備忘録 / 読書メモ etc.
     </h3>
     <p class="text-gray-600 dark:text-gray-400 mb-8">
-      Discover my top three highlighted blogs, each showcasing my Front-End
-      path!
+      自分用に残したメモです。
     </p>
   </div>
 

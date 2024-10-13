@@ -3,7 +3,7 @@
   "build": {
     "dockerfile": "../Dockerfile"
   },
-  "forwardPorts": [5173],
+  "forwardPorts": [4321],
   "workspaceFolder": "/workspace",
   "mounts": [
     {
