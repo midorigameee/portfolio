@@ -35,16 +35,4 @@
   .text-rose-custom {
     color: var(--clr-rose);
   }
-
-  .container > h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: large;
-  }
-
-  .container > h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: medium;
-  }
 }
