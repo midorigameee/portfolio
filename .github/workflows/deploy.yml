@@ -46,6 +46,8 @@ jobs:
           ls
           echo "----- ls ./portfolio -----"
           ls ./portfolio
+          echo "----- ls ./portfolio/dist -----"
+          ls ./portfolio/dist
 
   deploy:
     needs: build
