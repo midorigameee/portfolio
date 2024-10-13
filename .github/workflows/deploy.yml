@@ -20,32 +20,32 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: DEBUG confirmation my directory informatinon
-        run: |
-          echo "----- pwd -----"
-          pwd
-          echo "----- ls[before] -----"
-          ls
-          echo "----- mv -----"
-          mv portfolio/* .
-          echo "----- ls[after] -----"
-          ls
+      # - name: DEBUG confirmation my directory informatinon
+      #   run: |
+      #     echo "----- pwd -----"
+      #     pwd
+      #     echo "----- ls[before] -----"
+      #     ls
+      #     echo "----- mv -----"
+      #     mv portfolio/* .
+      #     echo "----- ls[after] -----"
+      #     ls
       - name: Install, build, and upload your site
         uses: withastro/action@v1
         with:
           path: ./portfolio # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
           node-version: 22 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
           # package-manager: pnpm@latest # 依存関係のインストールとサイトのビルドに使用する Node パッケージマネージャ。ロックファイルに基づいて自動的に検出されます。(オプション)
-      - name: DEBUG confirmation my directory informatinon
-        run: |
-          echo "----- pwd -----"
-          pwd
-          echo "----- ls[before] -----"
-          ls
-          echo "----- mv -----"
-          mv dist/* .
-          echo "----- ls[after] -----"
-          ls
+      # - name: DEBUG confirmation my directory informatinon
+      #   run: |
+      #     echo "----- pwd -----"
+      #     pwd
+      #     echo "----- ls[before] -----"
+      #     ls
+      #     echo "----- mv -----"
+      #     mv dist/* .
+      #     echo "----- ls[after] -----"
+      #     ls
 
   deploy:
     needs: build
