@@ -7,9 +7,13 @@ poster: '/images/astro.jpg'
 
 # AstroをGitHub Pagesにデプロイする
 
+デプロイ時に詰まったところなどを書いていきます。
+
 ## フォルダ構成
 
-```text
+今回のフォルダ構成は以下になります。（一部抜粋）
+
+```
 portfolio_astro/(リポジトリ名)/
 ├── .devcontainer
 │   └── devcontainer.json
@@ -24,6 +28,16 @@ portfolio_astro/(リポジトリ名)/
 
 ## astro.config.mjs
 
-```mjs
+```JavaScript
+// @ts-check
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+
+export default defineConfig({
+  integrations: [tailwind()],
+  site: 'https://midorigameee.github.io',
+  base: '/portfolio_astro/',
+  trailingSlash: 'never',
+});
 
 ```
