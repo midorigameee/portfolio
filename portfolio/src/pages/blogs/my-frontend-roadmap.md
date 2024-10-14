@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Blog.astro
-title: 'My Front-End Roadmap'
+title: '【元からあるやつ】My Front-End Roadmap'
 subtitle: 'take a look at my front-end roadmap'
 poster: '/images/astro.jpg'
 ---

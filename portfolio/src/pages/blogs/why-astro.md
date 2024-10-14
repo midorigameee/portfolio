@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Blog.astro
-title: 'Why You Should Pick Astro as Your First Framework'
+title: '【元からあるやつ】Why You Should Pick Astro as Your First Framework'
 subtitle: 'Astro makes web development a breeze, here’s why:'
 poster: '/images/astro.jpg'
 ---

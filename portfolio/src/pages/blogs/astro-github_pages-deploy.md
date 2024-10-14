@@ -5,13 +5,13 @@ subtitle: ''
 poster: '/images/astro.jpg'
 ---
 
-# AstroをGitHub Pagesにデプロイする
-
 デプロイ時に詰まったところなどを書いていきます。
 
 ## フォルダ構成
 
-今回のフォルダ構成は以下になります。（一部抜粋）
+今回のフォルダ構成は以下の通り（一部抜粋）
+
+開発環境としてDockerコンテナを使用しています。
 
 ```
 portfolio_astro/(リポジトリ名)/
@@ -30,6 +30,10 @@ portfolio_astro/(リポジトリ名)/
 
 ### astro.config.mjs
 
+GitHub PagesではデフォルトのURLが`https://<user_name>.github.io/<repository_name>`になるため、siteとbaseオプションをそれぞれ対応した値にしている。
+
+baseの値を設定することで、ソースコード内で使用しているリンクが自動的に`<base>/link`に補完される。（ただ、この設定がうまくいかずとても苦労したのは後半に書く…）
+
 ```JavaScript
 // @ts-check
 import { defineConfig } from 'astro/config';
@@ -45,6 +49,10 @@ export default defineConfig({
 ```
 
 ### deploy.yml
+
+GitHub Actionで、mainブランチにpushされたときに自動的にビルドするようにする。このyml自体はAstroの公式ページで公開されていたものをコピペした。
+
+このリポジトリは直下にソースが展開されているわけではないので、ビルド時の`path`のオプションでソースを格納しているフォルダを追加した。
 
 ```yml
 name: Deploy to GitHub Pages

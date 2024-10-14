@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Blog.astro
-title: 'Checkout all my technologies stack'
+title: '【元からあるやつ】Checkout all my technologies stack'
 subtitle: 'Front-End Web Development'
 poster: '/images/roadmap.jpg'
 ---
