@@ -23,7 +23,7 @@ const { title, subtitle, poster } = Astro.props.frontmatter;
     class="relative w-full h-64 bg-gray-800 flex items-center justify-center mb-12"
   >
     <Image
-      src={import.meta.env.PROD ? "/portfolio_astro/"+poster : poster}
+      src={import.meta.env.PROD ? '/portfolio_astro/' + poster : poster}
       alt="Poster image"
       width={1024}
       height={480}
@@ -70,7 +70,7 @@ const { title, subtitle, poster } = Astro.props.frontmatter;
 </Main>
 
 <style is:global>
-    .markdown-article h1 {
+  .markdown-article h1 {
     margin-bottom: 10px;
     font-weight: bold;
   }
@@ -82,10 +82,10 @@ const { title, subtitle, poster } = Astro.props.frontmatter;
     font-weight: bold;
 
     /* https://saruwakakun.com/html-css/reference/h-design */
-    padding: 0.5em;/*文字周りの余白*/
-    color: #494949;/*文字色*/
-    background: #fffaf4;/*背景色*/
-    border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+    padding: 0.5em; /*文字周りの余白*/
+    color: #cdcdcd; /*文字色*/
+    background: #525e69; /*背景色*/
+    border-left: solid 5px #477bae; /*左線（実線 太さ 色）*/
   }
 
   .markdown-article h3 {
@@ -96,6 +96,6 @@ const { title, subtitle, poster } = Astro.props.frontmatter;
 
     /* https://saruwakakun.com/html-css/reference/h-design */
     /*線の種類（二重線）太さ 色*/
-    border-bottom: double 5px #FFC778;
+    border-bottom: double 5px #477bae;
   }
 </style>
