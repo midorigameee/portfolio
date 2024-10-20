@@ -14,7 +14,9 @@ const blogs = await Astro.glob<{
   <div class="flex items-center flex-wrap pb-8 md:space-x-8 animate">
     <Image
       class="object-cover rounded-full w-[124px] h-[124px] max-md:w-24 max-md:h-24"
-      src={import.meta.env.PROD ? "/portfolio_astro/images/cat.avif" : "/images/cat.avif"}
+      src={import.meta.env.PROD
+        ? '/portfolio_astro/images/cat.avif'
+        : '/images/cat.avif'}
       alt="Avatar"
       width={124}
       height={124}
@@ -30,12 +32,12 @@ const blogs = await Astro.glob<{
       <h2
         class="text-xl sm:text-2xl text-gray-700 dark:text-gray-300 mt-2 ml-4"
       >
-        Saas系IT企業で働く駆け出しエンジニア
+        Saas系IT企業で働くなんちゃってWebエンジニア
       </h2>
       <p
         class="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-4 ml-4 text-wrap"
       >
-        自分の得意分野を作るために日々奮闘中です。
+        自信をもってWebエンジニアと名乗れるように日々奮闘中です。
       </p>
     </div>
   </div>
