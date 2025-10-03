@@ -23,7 +23,7 @@ const { title, subtitle, poster } = Astro.props.frontmatter;
     class="relative w-full h-64 bg-gray-800 flex items-center justify-center mb-12"
   >
     <Image
-      src={import.meta.env.PROD ? '/portfolio_astro/' + poster : poster}
+      src={import.meta.env.PROD ? '/portfolio/' + poster : poster}
       alt="Poster image"
       width={1024}
       height={480}

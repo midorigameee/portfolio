@@ -27,7 +27,7 @@ baseオプションを本番環境のみで使用する設定にする。
    baseオプションを以下のように修正する。
 
    ```javascript
-   base: isProduction ? '/portfolio_astro/' : '',
+   base: isProduction ? '/portfolio/' : '',
    ```
 
 2. Node.jsの型定義をインストールする

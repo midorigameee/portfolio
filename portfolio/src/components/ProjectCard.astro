@@ -8,7 +8,7 @@ import Technologies from '../components/Technologies.astro';
 <div class="flex flex-col sm:flex-row items-center mb-12">
   <div class="flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
     <Image
-      src={import.meta.env.PROD ? "/portfolio_astro/"+imgSrc : imgSrc}
+      src={import.meta.env.PROD ? '/portfolio/' + imgSrc : imgSrc}
       alt={imgAlt}
       class="w-[300px] h-[250px] object-cover grayscale hover:filter-none"
       width={300}

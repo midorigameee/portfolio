@@ -14,7 +14,7 @@ poster: '/images/astro.jpg'
 開発環境としてDockerコンテナを使用しています。
 
 ```
-portfolio_astro/(リポジトリ名)/
+portfolio/(リポジトリ名)/
 ├── .devcontainer
 │   └── devcontainer.json
 ├── .github
@@ -42,7 +42,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://midorigameee.github.io',
-  base: '/portfolio_astro/',
+  base: '/portfolio/',
   trailingSlash: 'never',
 });
 

@@ -8,6 +8,6 @@ const isProduction = process.env.NODE_ENV === 'production';
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://midorigameee.github.io',
-  base: isProduction ? '/portfolio_astro/' : '',
+  base: isProduction ? '/portfolio/' : '',
   trailingSlash: 'never',
 });

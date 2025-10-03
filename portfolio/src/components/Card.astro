@@ -10,7 +10,7 @@ const { to, title, gradientFrom, gradientTo } = Astro.props;
 ---
 
 <a
-  href={import.meta.env.PROD ? "/portfolio_astro"+to : to}
+  href={import.meta.env.PROD ? '/portfolio' + to : to}
   class={`card relative p-1 rounded-md transition-transform duration-200 ease-in-out hover:scale-90`}
   style={{
     backgroundImage: `linear-gradient(to right, ${gradientFrom}, ${gradientTo})`,
