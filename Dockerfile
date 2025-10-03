@@ -42,6 +42,6 @@ RUN git config --global core.quotepath false
 RUN git config --global push.default current
 
 ### node_modulesを予め用意しておく設定
-WORKDIR /workspace/portfolio
-COPY ./portfolio/package*.json /workspace/portfolio
-RUN npm install
+# WORKDIR /workspace/portfolio
+# COPY ./portfolio/package*.json /workspace/portfolio
+# RUN npm install

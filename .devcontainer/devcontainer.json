@@ -14,7 +14,7 @@
     {
       "type": "volume",
       "source": "node_modules_portfolio",
-      "target": "/workspace/portfolio/node_modules"
+      "target": "/workspace/node_modules"
     }
   ],
   "customizations": {
